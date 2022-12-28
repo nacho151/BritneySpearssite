@@ -1,0 +1,186 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;400;500;600&display=swap');
+
+*{margin:0; 
+padding: 0
+}
+    body {
+        background-color: black;
+        font-family: 'Public Sans', sans-serif; ;
+    }
+
+/*--HEADER--*/
+
+header {
+position: sticky;
+background-color: black;
+top: 0px}
+
+.menu-nav 
+{font-size: 1rem;
+padding: 20px;
+text-align: center;}
+
+.menu-nav ul li a {
+    text-decoration: none;
+    color:#6798d4 ;
+    font-weight: bold;}
+
+.menu-nav ul {
+    list-style: none;
+}
+.menu-nav ul li 
+{ display: inline-block;
+margin: 0px 10px
+}
+
+/*--Estilos generales--*/
+
+.news
+{
+    display:flex
+}
+.news p
+{
+    font-size: 0.8rem;
+}
+
+.biography
+{
+    display: flex;
+}
+
+/*--Index--*/
+.main-imagen {
+    width: 100%;
+}
+
+.videos div
+{display: inline-block;
+align-content: center;
+padding: 20px;}
+
+.titulo {text-align: center;
+color: aliceblue;
+font-size: 2rem;
+font-weight: 100;
+font-family: 'Public Sans', sans-serif;;}
+
+.noticias p
+{
+    color: white;
+    text-align: justify;
+    padding: 20px;
+    
+}
+.noticias img
+{padding: 20px;
+width: 500px;
+
+}
+
+
+/*--FOOTER--*/
+
+footer {color: antiquewhite;
+text-align: center;
+font-size: 1.3rem;
+padding: 30px;
+margin-top:30px ;
+border-top: 1px solid white}
+
+footer ul div {
+    display: inline-block;
+    list-style: none;}
+
+footer ul div img {
+    width: 90px;
+    height: 90px;
+
+}
+
+/*--biografia--*/
+.biography img {width: 350
+    px;
+height: 500px;
+padding: 20px;}
+
+.biography p {color: white;
+    margin-top: 20px;
+padding: 20px;
+font-size: 0.8rem;
+text-align: justify;
+}
+
+.biografia-titulo
+{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+/*--Discografia--*/
+
+.disco div 
+{display: inline-block;}
+.disco img{
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    
+}
+
+
+/*--Galeria--*/
+
+.galeria-titulo
+{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.galeria img{
+    width: 300px;
+    height: 380px;
+}
+
+.galeria{
+    margin-top: 40px;
+display:grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(4, 1fr);
+gap: 20px;
+justify-items: center;
+}
+
+@media screen and (max-width: 576px)
+
+
+
+/*--index--*/
+{
+    .main-imagen
+    {
+        align-content: center;
+    }
+    .news {
+        flex-direction: column;
+    }
+
+
+/*--biography--*/
+    .biography {
+        flex-direction: column;
+    }
+
+    .imgbio {
+        width: 400px;
+    }
+}
+/*--discography--*/
+
+.disco 
+{
+    align-items: center;
+}
