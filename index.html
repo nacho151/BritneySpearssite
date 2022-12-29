@@ -5,48 +5,108 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css"/>
 
     <title>Britney Spears</title>
 </head>
 <body>
     <header>
-    <img src="./img/logo_1.jpg" alt="logo britney spears">
+    
 
         
-        <nav class="menu-nav">
-
-        <!--Lista Desordenada-->  
-        <ul>
-            <li><a href="./index.html">INICIO</a></li>
-            <li><a href="./pages/biografia.html">BIOGRAFIA</a></li>
-            <li><a href="./pages/discografia.html">DISCOGRAFIA</a></li>
-            <li><a href="./pages/fechas.html">FECHAS</a></li>
-            <li><a href="./pages/galeria.html">GALERIA</a></li>
-        </nav>
-        <!-- -->
+    <nav class="navbar navbar-dark navbar-expand-lg ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="logo-header"src="./img/logo_1.jpg" alt="logo britney spears"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/biografia.html">BIOGRAFIA</a>
+              </li>
+              <a class="nav-link" href="./pages/discografia.html">DISCOGRAFIA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/galeria.html">GALERIA</a>
+              </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/fechas.html">GIRAS</a>
+            </li>
+            </ul>
+            </form>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
     <section>
-        <img class="main-imagen" src="./img/britney_imagen.jpg" alt="Foto De Britney">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/britney_imagen.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/galeria/slider2.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/galeria/slider3.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </section">
 <section class="titulo">
-    <h1>Videos Musicales</h1>
+    <nav class="navbar "navbar style="background-color: #eba1cc;">
+        <div class="container-fluid">
+          <span class="navbar-text">
+            Ultimos Lanzamientos
+          </span>
+        </div>
+      </nav>
 </section>
-    <section class="videos">
-    
+    <section class="music">
+    <div class="music2">
+        <div>
+            <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/ar/album/swimming-in-the-stars/1541357258?i=1541357261"></iframe>
+        </div>
     <div>
-        <iframe width="320" height="240" src="https://www.youtube.com/embed/C-u5WLJ9Yk4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/ar/album/hold-me-closer/1641082201?i=1641082205"></iframe>
+    </div> 
+    <div>
+        <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/ar/album/hold-me-closer-joel-corry-remix/1647789987?i=1647789998"></iframe>
     </div>
-<div>
-    <iframe width="320" height="240" src="https://www.youtube.com/embed/LOZuxwVk7TU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div> 
-
-</div>
+    <div>
+        <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/ar/album/hold-me-closer-acoustic/1653458137?i=1653458139"></iframe>
+    </div>
+    <div>
+        <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/ar/album/hold-me-closer-pink-panda-remix/1651420868?i=1651420869"></iframe>
+    </div>
+    </div>
 </section>
 
 <section class="noticias">
-    
+    <nav class="navbar "navbar style="background-color: #9ec3dd;">
+        <div class="container-fluid">
+          <span class="navbar-text">
+            Ultimas Noticias
+          </span>
+        </div>
+      </nav>
     <article class="news">
         <img src="./img/index/britneytv.png">
         <p>
@@ -74,18 +134,26 @@
     </main>
     <footer>
 <ul>
-    <div>
-        
-    <a href="https://es-la.facebook.com/britneyspears/" target="_blank"><img src="./img/facebook.png" alt="Icono de Facebook"></a>
-    </div>
-    <div>
-        <a href="https://www.instagram.com/britneyspears/"target="_blank"><img src="./img/instagram.png" alt="Icono de Instagram"></a>
-    </div>
-    <div>
-        <a href="https://www.youtube.com/channel/UCgffc95YDBlkGrBAJUHUmXQ"target="_blank"><img src="./img/youtube.png" alt="Icono de Youtube"></a>
-    </div>
+<li>
+    <i class="bi bi-facebook"></i>
+</li>
+<li>
+    <i class="bi bi-instagram"></i>
+</li>
+<li>
+    <i class="bi bi-youtube"></i>
+</li>
+<li>
+    <i href="https://open.spotify.com/artist/26dSoYclwsYLMAKD3tpOr4?si=d0nhasmJRvq0OKW6mBr9Aw" class="bi bi-spotify"></i> 
+</li>
 </ul>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 </body>
 
 </html>

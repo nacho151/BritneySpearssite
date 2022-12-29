@@ -14,25 +14,26 @@ padding: 0
 header {
 position: sticky;
 background-color: black;
-top: 0px}
-
-.menu-nav 
-{font-size: 1rem;
-padding: 20px;
-text-align: center;}
-
-.menu-nav ul li a {
-    text-decoration: none;
-    color:#6798d4 ;
-    font-weight: bold;}
-
-.menu-nav ul {
-    list-style: none;
+top: 0px;
+z-index: 100;
 }
-.menu-nav ul li 
-{ display: inline-block;
-margin: 0px 10px
+
+
+
+.nav-link{
+    color: #ef6767;
+    font-size: 0.9rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+.navbar
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+
+
 
 /*--Estilos generales--*/
 
@@ -51,15 +52,41 @@ margin: 0px 10px
 }
 
 /*--Index--*/
+
+.logo-header
+{
+    animation: ease-in animation 1s;
+}
+@keyframes animation{
+    0% {
+        transform: scale(0)
+    }
+    100%
+    {
+        transform: scale(1);
+    }
+}
+.navbar-text
+{
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+}
+
 .main-imagen {
     width: 100%;
 }
 
-.videos div
-{display: inline-block;
-align-content: center;
-padding: 20px;}
 
+.music div {
+    padding: 20px;
+}
+
+.music2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .titulo {text-align: center;
 color: aliceblue;
 font-size: 2rem;
@@ -89,16 +116,18 @@ padding: 30px;
 margin-top:30px ;
 border-top: 1px solid white}
 
-footer ul div {
+footer ul li {
+    color: #ef6767;
     display: inline-block;
     list-style: none;}
 
-footer ul div img {
-    width: 90px;
-    height: 90px;
+    .bi{
+        font-size: 3rem;
+    }
 
-}
-
+    .bi:hover{
+        color: #9ec3dd ;
+    }
 /*--biografia--*/
 .biography img {width: 350
     px;
@@ -131,35 +160,272 @@ text-align: justify;
 }
 
 
+
 /*--Galeria--*/
 
-.galeria-titulo
-{
-    color: white;
-    text-align: center;
-    font-size: 30px;
+.galeria{
+margin-top: 20px;
+display:grid;
+grid-template-columns: repeat(5 ,1fr);
+grid-template-rows: repeat(3, 1fr);
+gap: 20px;
+justify-items: center;
 }
 
 .galeria img{
     width: 300px;
     height: 380px;
+transition: 0.3s ease all;
+
+}
+.galeria img:hover{
+    transform: scale(1.10);
 }
 
-.galeria{
-    margin-top: 40px;
-display:grid;
-grid-template-columns: repeat(4, 1fr);
-grid-template-rows: repeat(4, 1fr);
-gap: 20px;
-justify-items: center;
+/*--Giras--*/
+
+.baby{
+    display:flex
 }
 
-@media screen and (max-width: 576px)
+.baby img {
+height: 500px;
+padding: 20px;
+}
+
+.baby p{
+color: white;
+margin-top: 20px;
+padding: 20px;
+font-size: 0.8rem;
+text-align: justify
+}
+
+.oops{
+    display:flex
+}
+
+.oops img {
+height: 570px;
+padding: 20px;
+}
+
+.oops p{
+color: white;
+margin-top: 20px;
+padding: 20px;
+font-size: 0.8rem;
+text-align: justify
+}
+
+.dream{
+    display:flex
+}
+
+.dream img {
+height: 500px;
+padding: 20px;
+}
+
+.dream p{
+color: white;
+margin-top: 20px;
+padding: 20px;
+font-size: 0.8rem;
+text-align: justify
+}
+
+.onyx{
+    display:flex
+}
+
+.onyx img {
+height: 500px;
+padding: 20px;
+}
+
+.onyx p{
+color: white;
+margin-top: 20px;
+padding: 20px;
+font-size: 0.8rem;
+text-align: justify
+}
+
+.circus{
+    display:flex
+}
+
+.circus img {
+height: 500px;
+padding: 20px;
+}
+
+.circus p{
+color: white;
+margin-top: 20px;
+padding: 20px;
+font-size: 0.8rem;
+text-align: justify
+}
+
+.ff{
+    display:flex
+}
+
+.ff img {
+height: 500px;
+padding: 20px;
+}
+
+.ff p{
+color: white;
+margin-top: 20px;
+padding: 20px;
+font-size: 0.8rem;
+text-align: justify
+}
+
+.vegas{
+    display:flex
+}
+
+.vegas img {
+height: 500px;
+padding: 20px;
+}
+
+.vegas p{
+color: white;
+margin-top: 20px;
+padding: 20px;
+font-size: 0.8rem;
+text-align: justify
+}
 
 
 
-/*--index--*/
+
+
+
+/**--MEDIA QUERY--*/
+@media only screen and (max-width: 1285px)
 {
+    .galeria {
+        grid-template-columns: repeat(3 ,1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .news {
+        flex-direction: column;
+    }
+    /*--Giras--*/
+
+
+.baby {
+    flex-direction: column;
+}
+.oops {
+    flex-direction: column;
+}
+.dream {
+    flex-direction: column;
+}
+.onyx {
+    flex-direction: column;
+}
+.circus {
+    flex-direction: column;
+}
+.ff {
+    flex-direction: column;
+}
+.vegas {
+    flex-direction: column;
+}
+}
+
+
+@media only screen and (max-width: 786px)
+{
+    .galeria {
+        grid-template-columns: repeat(2 ,1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+
+    .news {
+        flex-direction: column;
+    }
+    /*--Giras--*/
+
+
+.baby {
+    flex-direction: column;
+}
+.oops {
+    flex-direction: column;
+}
+.dream {
+    flex-direction: column;
+}
+.onyx {
+    flex-direction: column;
+}
+.circus {
+    flex-direction: column;
+}
+.ff {
+    flex-direction: column;
+}
+.vegas {
+    flex-direction: column;
+}
+}
+
+@media only screen and (max-width: 768px)
+{
+    .galeria {
+        grid-template-columns: repeat(2 ,1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+
+    .news {
+        flex-direction: column;
+    }
+    /*--Giras--*/
+
+
+.baby {
+    flex-direction: column;
+}
+.oops {
+    flex-direction: column;
+}
+.dream {
+    flex-direction: column;
+}
+.onyx {
+    flex-direction: column;
+}
+.circus {
+    flex-direction: column;
+}
+.ff {
+    flex-direction: column;
+}
+.vegas {
+    flex-direction: column;
+}
+}
+
+
+@media only screen and (max-width: 576px)
+{
+    .galeria {
+        grid-template-columns: repeat(1 ,1fr);
+        grid-template-rows: repeat(15, 1fr);
+    }
+
+    
     .main-imagen
     {
         align-content: center;
@@ -168,6 +434,10 @@ justify-items: center;
         flex-direction: column;
     }
 
+.music2{
+
+    flex-direction: column
+}
 
 /*--biography--*/
     .biography {
@@ -177,10 +447,49 @@ justify-items: center;
     .imgbio {
         width: 400px;
     }
-}
 /*--discography--*/
 
-.disco 
+.discography
 {
-    align-items: center;
+    flex-direction: column
 }
+
+
+/*--Giras--*/
+
+
+.baby {
+    flex-direction: column;
+}
+
+.oops {
+    flex-direction: column;
+}
+
+.pictour2{
+    height: auto;
+}
+.dream {
+    flex-direction: column;
+}
+.onyx {
+    flex-direction: column;
+}
+.circus {
+    flex-direction: column;
+}
+.ff {
+    flex-direction: column;
+}
+.vegas {
+    flex-direction: column;
+}
+
+
+
+
+
+}
+
+/*--index--*/
+
