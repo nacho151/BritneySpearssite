@@ -1,0 +1,29 @@
+/*--Galeria--*/
+
+.galeria {
+
+        margin-top: 20px;
+        display:grid;
+        grid-template-columns: repeat(5 ,1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 20px;
+        justify-items: center;
+ 
+
+
+}
+        
+
+
+.galeria img{
+    transition: 0.3s ease all;
+}
+.galeria img:hover{
+    transform: scale(1.10);
+}
+
+
+
+
+
+

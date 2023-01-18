@@ -1,0 +1,182 @@
+/**--MEDIA QUERY--*/
+@media only screen and (max-width: 1285px)
+{
+    .galeria {
+        grid-template-columns: repeat(3 ,1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .news {
+        flex-direction: column;
+    }
+    /*--Giras--*/
+
+
+.baby {
+    flex-direction: column;
+}
+.oops {
+    flex-direction: column;
+}
+.dream {
+    flex-direction: column;
+}
+.onyx {
+    flex-direction: column;
+}
+.circus {
+    flex-direction: column;
+}
+.ff {
+    flex-direction: column;
+}
+.vegas {
+    flex-direction: column;
+}
+}
+
+
+@media only screen and (max-width: 786px)
+{
+    .galeria {
+        grid-template-columns: repeat(2 ,1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+
+    .news {
+        flex-direction: column;
+    }
+    /*--Giras--*/
+
+
+.baby {
+    flex-direction: column;
+}
+.oops {
+    flex-direction: column;
+}
+.dream {
+    flex-direction: column;
+}
+.onyx {
+    flex-direction: column;
+}
+.circus {
+    flex-direction: column;
+}
+.ff {
+    flex-direction: column;
+}
+.vegas {
+    flex-direction: column;
+}
+}
+
+@media only screen and (max-width: 768px)
+{
+    .galeria {
+        grid-template-columns: repeat(2 ,1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+
+    .news {
+        flex-direction: column;
+    }
+    /*--Giras--*/
+
+
+.baby {
+    flex-direction: column;
+}
+.oops {
+    flex-direction: column;
+}
+.dream {
+    flex-direction: column;
+}
+.onyx {
+    flex-direction: column;
+}
+.circus {
+    flex-direction: column;
+}
+.ff {
+    flex-direction: column;
+}
+.vegas {
+    flex-direction: column;
+}
+}
+
+
+@media only screen and (max-width: 576px)
+{
+    .galeria {
+        grid-template-columns: repeat(1 ,1fr);
+        grid-template-rows: repeat(15, 1fr);
+    }
+
+    
+    .main-imagen
+    {
+        align-content: center;
+    }
+    .news {
+        flex-direction: column;
+    }
+
+.music2{
+
+    flex-direction: column
+}
+
+/*--biography--*/
+    .biography {
+        flex-direction: column;
+    }
+
+    .imgbio {
+        width: 400px;
+    }
+/*--discography--*/
+
+.discography
+{
+    flex-direction: column
+}
+
+
+/*--Giras--*/
+
+
+.baby {
+    flex-direction: column;
+}
+
+.oops {
+    flex-direction: column;
+}
+
+.pictour2{
+    height: auto;
+}
+.dream {
+    flex-direction: column;
+}
+.onyx {
+    flex-direction: column;
+}
+.circus {
+    flex-direction: column;
+}
+.ff {
+    flex-direction: column;
+}
+.vegas {
+    flex-direction: column;
+}
+
+
+
+
+
+}

@@ -1,495 +1,439 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;400;500;600&display=swap');
-
-*{margin:0; 
-padding: 0
-}
-    body {
-        background-color: black;
-        font-family: 'Public Sans', sans-serif; ;
-    }
-
 /*--HEADER--*/
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  font-family: "Public Sans", sans-serif;
+}
 
 header {
-position: sticky;
-background-color: black;
-top: 0px;
-z-index: 100;
+  position: sticky;
+  background-color: black;
+  top: 0px;
+  z-index: 100;
+}
+header .navbar {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+header .nav-link {
+  color: #ef6767;
+  font-size: 0.9rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-
-
-.nav-link{
-    color: #ef6767;
-    font-size: 0.9rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.music2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.navbar
-{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: bold;
+.galeria img {
+  width: 300px;
+  height: 380px;
 }
 
-
-
-
-/*--Estilos generales--*/
-
-.news
-{
-    display:flex
-}
-.news p
-{
-    font-size: 0.8rem;
-}
-
-.biography
-{
-    display: flex;
+.disco img {
+  width: 200px;
+  height: 200px;
+  padding: 5px;
 }
 
 /*--Index--*/
+.news {
+  display: flex;
+}
 
-.logo-header
-{
-    animation: ease-in animation 1s;
+.news p {
+  font-size: 0.8rem;
 }
-@keyframes animation{
-    0% {
-        transform: scale(0)
-    }
-    100%
-    {
-        transform: scale(1);
-    }
+
+.biography {
+  display: flex;
 }
-.navbar-text
-{
-    font-size: 20px;
-    width: 100%;
-    text-align: center;
+
+.logo-header {
+  animation: ease-in animation 1s;
+}
+
+@keyframes animation {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.navbar-text {
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
 }
 
 .main-imagen {
-    width: 100%;
+  width: 100%;
 }
-
 
 .music div {
-    padding: 20px;
+  padding: 20px;
 }
 
-.music2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.titulo {text-align: center;
-color: aliceblue;
-font-size: 2rem;
-font-weight: 100;
-font-family: 'Public Sans', sans-serif;;}
-
-.noticias p
-{
-    color: white;
-    text-align: justify;
-    padding: 20px;
-    
-}
-.noticias img
-{padding: 20px;
-width: 500px;
-
+.titulo {
+  text-align: center;
+  color: aliceblue;
+  font-size: 2rem;
+  font-weight: 100;
+  font-family: "Public Sans", sans-serif;
 }
 
+.noticias p {
+  color: white;
+  text-align: justify;
+  padding: 20px;
+}
+
+.noticias img {
+  padding: 20px;
+  width: 500px;
+}
 
 /*--FOOTER--*/
-
-footer {color: antiquewhite;
-text-align: center;
-font-size: 1.3rem;
-padding: 30px;
-margin-top:30px ;
-border-top: 1px solid white}
-
-footer ul li {
-    color: #ef6767;
-    display: inline-block;
-    list-style: none;}
-
-    .bi{
-        font-size: 3rem;
-    }
-
-    .bi:hover{
-        color: #9ec3dd ;
-    }
-/*--biografia--*/
-.biography img {width: 350
-    px;
-height: 500px;
-padding: 20px;}
-
-.biography p {color: white;
-    margin-top: 20px;
-padding: 20px;
-font-size: 0.8rem;
-text-align: justify;
+footer {
+  color: antiquewhite;
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 30px;
+  margin-top: 30px;
+  border-top: 1px solid white;
+}
+footer ul {
+  display: inline-block;
+  justify-content: center;
+}
+footer li {
+  color: #ef6767;
+  display: inline-block;
+  list-style: none;
+}
+footer .bi {
+  font-size: 3rem;
+}
+footer .bi:hover {
+  color: #9ec3dd;
 }
 
-.biografia-titulo
-{
-    color: white;
-    text-align: center;
-    font-size: 20px;
+/*--biografia--*/
+.biography img {
+  width: 350 px;
+  height: 500px;
+  padding: 20px;
+}
+
+.biography p {
+  color: white;
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 0.8rem;
+  text-align: justify;
+}
+
+.biografia-titulo {
+  color: white;
+  text-align: center;
+  font-size: 20px;
 }
 
 /*--Discografia--*/
-
-.disco div 
-{display: inline-block;}
-.disco img{
-    width: 200px;
-    height: 200px;
-    padding: 5px;
-    
+.disco div {
+  display: inline-block;
 }
-
-
 
 /*--Galeria--*/
-
-.galeria{
-margin-top: 20px;
-display:grid;
-grid-template-columns: repeat(5 ,1fr);
-grid-template-rows: repeat(3, 1fr);
-gap: 20px;
-justify-items: center;
+.galeria {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
 }
 
-.galeria img{
-    width: 300px;
-    height: 380px;
-transition: 0.3s ease all;
-
+.galeria img {
+  transition: 0.3s ease all;
 }
-.galeria img:hover{
-    transform: scale(1.10);
+
+.galeria img:hover {
+  transform: scale(1.1);
 }
 
 /*--Giras--*/
-
-.baby{
-    display:flex
+.baby {
+  display: flex;
 }
 
 .baby img {
-height: 500px;
-padding: 20px;
+  height: 500px;
+  padding: 20px;
 }
 
-.baby p{
-color: white;
-margin-top: 20px;
-padding: 20px;
-font-size: 0.8rem;
-text-align: justify
+.baby p {
+  color: white;
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 0.8rem;
+  text-align: justify;
 }
 
-.oops{
-    display:flex
+.oops {
+  display: flex;
 }
 
 .oops img {
-height: 570px;
-padding: 20px;
+  height: 570px;
+  padding: 20px;
 }
 
-.oops p{
-color: white;
-margin-top: 20px;
-padding: 20px;
-font-size: 0.8rem;
-text-align: justify
+.oops p {
+  color: white;
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 0.8rem;
+  text-align: justify;
 }
 
-.dream{
-    display:flex
+.dream {
+  display: flex;
 }
 
 .dream img {
-height: 500px;
-padding: 20px;
+  height: 500px;
+  padding: 20px;
 }
 
-.dream p{
-color: white;
-margin-top: 20px;
-padding: 20px;
-font-size: 0.8rem;
-text-align: justify
+.dream p {
+  color: white;
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 0.8rem;
+  text-align: justify;
 }
 
-.onyx{
-    display:flex
+.onyx {
+  display: flex;
 }
 
 .onyx img {
-height: 500px;
-padding: 20px;
+  height: 500px;
+  padding: 20px;
 }
 
-.onyx p{
-color: white;
-margin-top: 20px;
-padding: 20px;
-font-size: 0.8rem;
-text-align: justify
+.onyx p {
+  color: white;
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 0.8rem;
+  text-align: justify;
 }
 
-.circus{
-    display:flex
+.circus {
+  display: flex;
 }
 
 .circus img {
-height: 500px;
-padding: 20px;
+  height: 500px;
+  padding: 20px;
 }
 
-.circus p{
-color: white;
-margin-top: 20px;
-padding: 20px;
-font-size: 0.8rem;
-text-align: justify
+.circus p {
+  color: white;
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 0.8rem;
+  text-align: justify;
 }
 
-.ff{
-    display:flex
+.ff {
+  display: flex;
 }
 
 .ff img {
-height: 500px;
-padding: 20px;
+  height: 500px;
+  padding: 20px;
 }
 
-.ff p{
-color: white;
-margin-top: 20px;
-padding: 20px;
-font-size: 0.8rem;
-text-align: justify
+.ff p {
+  color: white;
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 0.8rem;
+  text-align: justify;
 }
 
-.vegas{
-    display:flex
+.vegas {
+  display: flex;
 }
 
 .vegas img {
-height: 500px;
-padding: 20px;
+  height: 500px;
+  padding: 20px;
 }
 
-.vegas p{
-color: white;
-margin-top: 20px;
-padding: 20px;
-font-size: 0.8rem;
-text-align: justify
+.vegas p {
+  color: white;
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 0.8rem;
+  text-align: justify;
 }
-
-
-
-
-
 
 /**--MEDIA QUERY--*/
-@media only screen and (max-width: 1285px)
-{
-    .galeria {
-        grid-template-columns: repeat(3 ,1fr);
-        grid-template-rows: repeat(4, 1fr);
-    }
-    .news {
-        flex-direction: column;
-    }
-    /*--Giras--*/
-
-
-.baby {
+@media only screen and (max-width: 1285px) {
+  .galeria {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .news {
     flex-direction: column;
-}
-.oops {
+  }
+  /*--Giras--*/
+  .baby {
     flex-direction: column;
-}
-.dream {
+  }
+  .oops {
     flex-direction: column;
-}
-.onyx {
+  }
+  .dream {
     flex-direction: column;
-}
-.circus {
+  }
+  .onyx {
     flex-direction: column;
-}
-.ff {
+  }
+  .circus {
     flex-direction: column;
-}
-.vegas {
+  }
+  .ff {
     flex-direction: column;
-}
-}
-
-
-@media only screen and (max-width: 786px)
-{
-    .galeria {
-        grid-template-columns: repeat(2 ,1fr);
-        grid-template-rows: repeat(8, 1fr);
-    }
-
-    .news {
-        flex-direction: column;
-    }
-    /*--Giras--*/
-
-
-.baby {
+  }
+  .vegas {
     flex-direction: column;
+  }
 }
-.oops {
+@media only screen and (max-width: 786px) {
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+  }
+  .news {
     flex-direction: column;
-}
-.dream {
+  }
+  /*--Giras--*/
+  .baby {
     flex-direction: column;
-}
-.onyx {
+  }
+  .oops {
     flex-direction: column;
-}
-.circus {
+  }
+  .dream {
     flex-direction: column;
-}
-.ff {
+  }
+  .onyx {
     flex-direction: column;
-}
-.vegas {
+  }
+  .circus {
     flex-direction: column;
-}
-}
-
-@media only screen and (max-width: 768px)
-{
-    .galeria {
-        grid-template-columns: repeat(2 ,1fr);
-        grid-template-rows: repeat(8, 1fr);
-    }
-
-    .news {
-        flex-direction: column;
-    }
-    /*--Giras--*/
-
-
-.baby {
+  }
+  .ff {
     flex-direction: column;
-}
-.oops {
+  }
+  .vegas {
     flex-direction: column;
+  }
 }
-.dream {
+@media only screen and (max-width: 768px) {
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+  }
+  .news {
     flex-direction: column;
-}
-.onyx {
+  }
+  /*--Giras--*/
+  .baby {
     flex-direction: column;
-}
-.circus {
+  }
+  .oops {
     flex-direction: column;
-}
-.ff {
+  }
+  .dream {
     flex-direction: column;
-}
-.vegas {
+  }
+  .onyx {
     flex-direction: column;
-}
-}
-
-
-@media only screen and (max-width: 576px)
-{
-    .galeria {
-        grid-template-columns: repeat(1 ,1fr);
-        grid-template-rows: repeat(15, 1fr);
-    }
-
-    
-    .main-imagen
-    {
-        align-content: center;
-    }
-    .news {
-        flex-direction: column;
-    }
-
-.music2{
-
-    flex-direction: column
-}
-
-/*--biography--*/
-    .biography {
-        flex-direction: column;
-    }
-
-    .imgbio {
-        width: 400px;
-    }
-/*--discography--*/
-
-.discography
-{
-    flex-direction: column
-}
-
-
-/*--Giras--*/
-
-
-.baby {
+  }
+  .circus {
     flex-direction: column;
-}
-
-.oops {
+  }
+  .ff {
     flex-direction: column;
+  }
+  .vegas {
+    flex-direction: column;
+  }
 }
-
-.pictour2{
+@media only screen and (max-width: 576px) {
+  .galeria {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+  }
+  .main-imagen {
+    align-content: center;
+  }
+  .news {
+    flex-direction: column;
+  }
+  .music2 {
+    flex-direction: column;
+  }
+  /*--biography--*/
+  .biography {
+    flex-direction: column;
+  }
+  .imgbio {
+    width: 400px;
+  }
+  /*--discography--*/
+  .discography {
+    flex-direction: column;
+  }
+  /*--Giras--*/
+  .baby {
+    flex-direction: column;
+  }
+  .oops {
+    flex-direction: column;
+  }
+  .pictour2 {
     height: auto;
-}
-.dream {
+  }
+  .dream {
     flex-direction: column;
-}
-.onyx {
+  }
+  .onyx {
     flex-direction: column;
-}
-.circus {
+  }
+  .circus {
     flex-direction: column;
-}
-.ff {
+  }
+  .ff {
     flex-direction: column;
-}
-.vegas {
+  }
+  .vegas {
     flex-direction: column;
+  }
 }
 
-
-
-
-
-}
-
-/*--index--*/
-
+/*# sourceMappingURL=style.css.map */
